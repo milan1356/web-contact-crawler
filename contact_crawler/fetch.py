@@ -32,7 +32,7 @@ USER_AGENT = (
 MAX_BYTES = 2_000_000
 
 # Used only after a page comes back blocked. Direct requests stay off this proxy.
-CRAWLERA_KEY = os.environ.get("ZYTE_API_KEY", "9624aea48eb244d5b0906dc326dbdb72")
+CRAWLERA_KEY = os.environ.get("ZYTE_API_KEY", "").strip()
 PROXY_HOST = os.environ.get("ZYTE_PROXY_HOST", "api.zyte.com")
 PROXY_PORT = os.environ.get("ZYTE_PROXY_PORT", "8011")
 CERT_PATH = os.environ.get(
